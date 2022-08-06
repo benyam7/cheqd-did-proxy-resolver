@@ -50,7 +50,14 @@ the expected response is:
    time? (200 words max.)This can relate to anything at all: the code, the architecture, the
    documentation. There are no right or wrong answers here.
     1. I would do a review and refactor of my code, regarding the code organization. In my case
-       I have put everything inside the `index.js` file. I didn't organize the code in a way that's easier to read and maintain in the future as the code base grows. Also, spent some time on error handling, for example: if the `network` param is there but not either `mainnet` or `testnet`, I will let the user know. I am it's fine for someone who's already in the crypto space but for new people, it might be confusing.
+       I have put everything inside the `index.js` file. I didn't organize the code in a way that's easier to read and maintain in the future as the code base grows. 
+       
+        Also, spent some time on error handling, for example: if the `network` param is there but not either `mainnet`
+   or `testnet`, I will let the user know. I am it's fine for someone who's already in the crypto space but for new
+   people, it might be confusing.
+
+        Plus, regarding code collaboration I might have a separate branch for the `feature` like `feat/cheqd-did-resolver` to
+   implement then create a PR to `main` and have someone review it.
 
     2. I would switch to typescript.😅 I mean, I could have chosen it the first time
        when setting up my project. But, I thought it is a pretty small project and went with javascript.😅
